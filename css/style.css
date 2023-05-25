@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'Gotham Medium';
+    src: local('Gotham Medium'),
+        url('../fonts/gotham_medium.woff') format('woff'),
+        url('../fonts/gotham_medium.woff2') format('woff2'),
+        url('../fonts/gotham_medium.eot') format('eot');
+    }
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: local('Gotham Bold'),
+        url('../fonts/gotham_bold.woff') format('woff'),
+        url('../fonts/gotham_bold.woff2') format('woff2'),
+        url('../fonts/gotham_bold.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: local('Gotham Book'),
+        url('../fonts/gotham_book.woff') format('woff'),
+        url('../fonts/gotham_book.woff2') format('woff2'),
+        url('../fonts/gotham_book.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: local('Gotham Light'), 
+        url('../fonts/gotham_light.woff2') format('woff2'),
+        url('../fonts/gotham_light.woff') format('woff'),
+        url('../fonts/gotham_light.eot') format('eot');
+}
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items:center;
+}
+
+.logo_nav {
+    padding: 21px 77px 21px 75px
+}
+
+.menu {
+    list-style-type: none
+}
+
+.menu .menu_item {
+    display: inline-block;
+    margin-right: 27px;
+}
+
+.menu_link {
+    font-family: 'Gotham Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #151515;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    padding-left: 6px;
+    transform: translate(0,-2px)
+}
+
+ul.breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+  }
+
+.menu .lang_item {
+    margin-right: 0;
+}
+
+ul.breadcrumb li.ru_color a{
+    color: #223071;
+    text-decoration: underline;
+}
+
+.lang {
+    margin-right: 10px;
+}
+
+.main {
+    min-height: 659px;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ) ,url('../img/Black.jpg') center center/cover no-repeat;
+}
+
+
+.main .main_header {
+    margin: 0;
+    padding: 166px 0 14px 59px;
+    font-family: 'Gotham Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 76px;
+    color: #FFFFFF;
+}
+
+.main .main_description {
+    padding: 0 0 34px 61px;
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #EEEEEE;
+}
+
+.main .btn_reverse {
+    display: block;
+    margin: 0 0 178px 61px;
+    width: 250px;
+    height: 50px;
+    font-family: 'Gotham Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background: #AE2A26;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none
+}
+
+.main .rev_scroll {
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    writing-mode: vertical-rl;
+    margin: 0 0 0 1302px;
+
+}
+
+.main .btn_call {
+    margin: 0 20px 31px 1346px;
+    width: 41.02px;
+    height: 41.02px;
+    background: #AE2A26;
+    border-radius: 60px;
+    border: none;
+}
+
+
+.stripes {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.header {
+    margin-top: 35.5px;
+    font-family: 'Gotham Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+.description {
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.center {
+    text-align: center;
+}
+
+.info .info_wrap {
+    margin-top: 50px;
+    display: flex; 
+}                                                                      
+
+.info .info_wrapper {
+    flex-basis: 50%;
+}
+
+
+.info .info_wrapper .info_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info .info_wrapper .info_item .info_amount {
+    margin-right: 15px;
+    font-family: 'Gotham Medium';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+.info .info_wrapper .info_item .info_units {
+    font-family: 'Gotham Medium';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 64px;
+    text-transform: lowercase;
+    color: #151515;
+}
+
+.info .info_lines {
+    padding: 65px 0 0 639px;
+}
+
+.services .services_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.services .services_wrapper {
+    width: 288px;
+    height: 313px;
+    border: 1px solid #E3E3E3;
+}
+
+.services .services_wagons {
+    padding: 84px 0 0 101px;
+}
+
+.services .wagon_item_1 {
+    padding: 58px 0 0 79px;
+
+}
+
+.services .wagon_item_2 {
+    padding: 71px 0 0 103px;
+}
+
+.services .wagon_item_4 {
+    padding: 85px 0 0 83px;
+}
+
+.services .services_description {
+    padding: 29px 14px 0 14px;
+    font-family: 'Gotham Medium';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 16px;
+    text-align: center;
+    color: #151515;
+}
+
+.services .description_item_1 {
+    padding-top: 26px;
+}
+
+.services .description_item_2 {
+    padding-top: 26px
+}
+
+.services .description_item_4 {
+    padding-top: 34px;
+}
+
+.services .services_minilines {
+    padding: 25px 0 0 115px;
+}
+
+.services .services_lines {
+    padding: 55px 0 0 639px;
+}
+
+.services_about .services_photos {
+    margin-top: 52px;
+    padding: 0 0 0 179px;
+}
+
+.services_about .service_photo_wrapper {
+    display: inline-block;
+}
+
+.services_about .photo_right {
+    margin-right: 32px;
+}
+
+.geography .geography_stripes {
+    display: block;
+    padding: 0 0 0 179px;
+}
+
+.geography .geography_header {
+    margin-top: 36px;
+    text-align: left;
+    padding: 0 0 0 179px;
+}
+.geography .geography_description {
+    margin-top: 15px;
+    padding: 0 0 0 179px;
+}
+
+.geography .kazakhstan {
+    padding: 0 0 0 251px;
+}
+
+.press .press_wrapper {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.press .press_wrap {
+    width: 384px;
+    height: 487px;
+    border: 1px solid #E3E3E3;
+}
+
+.press .press_header {
+    padding: 34px 0 0 23px;
+    font-family: 'Gotham Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #151515;
+}
+
+.press .press_description {
+    padding: 13px 0 0 23px;
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+.press .press_arrow {
+    padding: 46px 0 0 23px;
+}
+
+.press .press_third_arrow {
+    padding: 94px 0 0 23px;
+}
+
+.press .press_lines {
+    padding: 55px 0 0 639px;
+}
+
+.certificates .certificates_wrapper {
+    margin-top: 55px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.certificates .certificates_lines {
+    padding: 61px 0 0 639px
+}
+
+.ending {
+    margin-top: 85px;
+    min-height: 428px;
+    background: #E7E7E7;
+}
+
+.ending .ending_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 53px;
+}
+
+.ending .ending_header {
+    font-family: 'Gotham Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+.ending .ending_wrapper {
+    display: flex;
+    flex-wrap:nowrap;
+    grid-gap: 40px
+}
+
+.ending .ending_wrap {
+    flex-basis: 50%;
+}
+
+.ending .ending_item {
+    margin-top: 5px;
+    list-style-type: none;
+    font-family: 'Gotham Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+.ending_link { 
+    text-decoration: none;
+    color: #555555;
+}
+
+.ending .wrap_end {
+    margin-top: 22px;
+}

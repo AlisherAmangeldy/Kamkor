@@ -1,0 +1,169 @@
+@font-face
+  font-family: 'Gotham Medium'
+  src: local("Gotham Medium")
+  src: url('../fonts/gotham_medium.woff') format("woff")
+  src: url('../fonts/gotham_medium.woff2') format("woff2")
+  src: url('../fonts/gotham_medium.eot') format("eot")
+
+@font-face
+  font-family: 'Gotham Bold'
+  src: local("Gotham Bold")
+  src: url('../fonts/gotham_bold.woff') format("woff")
+  src: url('../fonts/gotham_bold.woff2') format("woff2")
+  src: url('../fonts/gotham_bold.eot') format("eot")
+
+@font-face
+  font-family: 'Gotham Book'
+  src: local("Gotham Book")
+  src: url('../fonts/gotham_book.woff') format("woff")
+  src: url('../fonts/gotham_book.woff2') format("woff2")
+  src: url('../fonts/gotham_book.eot') format("eot")
+
+@font-face
+  font-family: 'Gotham Light'
+  src: local("Gotham Light")
+  src: url('../fonts/gotham_light.woff2') format("woff2")
+  src: url('../fonts/gotham_light.woff') format("woff")
+  src: url('../fonts/gotham_light.eot') format("eot")
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+.container
+  position: relative
+  max-width: 1366px
+  margin: 0 auto
+
+.nav-container
+  display: flex
+  align-items: center
+
+.logo_nav
+  padding: 21px 77px 21px 75px
+
+.menu
+  list-style-type: none
+
+  .menu_item
+    display: inline-block
+    margin-right: 27px
+
+    .menu_link
+    font-family: 'Gotham Medium'
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 0.04em
+    text-decoration: none
+    color: #151515
+    text-transform: uppercase
+
+    .dropdown
+    padding-left: 6px
+    transform: translate(0, -2px)
+
+    ul.breadcrumb li + li:before
+    color: black
+    content: "/\00a0"
+
+    .menu .lang_item
+    margin-right: 0
+
+    .lang
+    margin-right: 10px
+
+.main
+  min-height: 659px
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/Black.jpg') center (center / cover) no-repeat
+
+  .main_header
+    margin: 0
+    padding: 166px 0 14px 59px
+    font-family: 'Gotham Medium'
+    font-style: normal
+    font-weight: 500
+    font-size: 70px
+    line-height: 76px
+    color: #FFFFFF
+
+  .main_description
+    padding: 0 0 34px 61px
+    font-family: 'Gotham Light'
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 32px
+    color: #EEEEEE
+
+  .btn_reverse
+    display: block
+    margin: 0 0 0 61px
+    background: url('../img/call.svg')
+    width: 250px
+    height: 50px
+    font-family: 'Gotham Bold'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+    background: #AE2A26
+    color: #FFFFFF
+    border-radius: 10px
+    border: none
+
+  .rev_scroll
+    font-family: 'Gotham Light'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.2em
+    color: #FFFFFF
+    transform: rotate(90deg)
+
+  .btn_call
+    display: block
+    margin: 0 20px 20px 1305px
+    width: 41.02px
+    height: 41.02px
+    background: #AE2A26
+    border-radius: 60px
+
+.info
+  min-height: 4100px
+
+  .info_stripes
+    display: flex
+    justify-content: center
+    margin-top: 85px
+
+  .info_header
+    margin-top: 15px
+    font-family: 'Gotham Bold'
+    font-style: normal
+    font-weight: 700
+    font-size: 38px
+    line-height: 120%
+    text-align: center
+    color: #151515
+
+  .info_description
+    font-family: 'Gotham'
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 24px
+    color: #666666
+
+  .info_center
+    text-align: center
+
+  .info_item
+    display: flex
+
+  .info_amount:
+    margin-right: 15px
