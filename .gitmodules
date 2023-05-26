@@ -1,0 +1,3 @@
+[submodule "Kamkor"]
+    path = Kamkor
+    url = https://github.com/AlisherAmangeldy/Kamkor.git
