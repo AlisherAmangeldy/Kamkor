@@ -98,8 +98,8 @@ ul.breadcrumb li.ru_color a{
 .main {
     min-height: 659px;
     background:linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
       ) ,url('../img/Black.jpg') center center/cover no-repeat;
 }
 
@@ -150,9 +150,8 @@ ul.breadcrumb li.ru_color a{
     letter-spacing: 0.2em;
     color: #FFFFFF;
     writing-mode: vertical-rl;
-    margin: 0 0 0 1302px;
-
 }
+
 
 .main .btn_call {
     margin: 0 20px 31px 1346px;
@@ -237,8 +236,9 @@ ul.breadcrumb li.ru_color a{
 
 .services .services_wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 60px;
+    gap: 21.17px;
 }
 
 .services .services_wrapper {
@@ -327,10 +327,13 @@ ul.breadcrumb li.ru_color a{
     padding: 0 0 0 251px;
 }
 
+
+
 .press .press_wrapper {
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 55px;
+    gap: 32.5px;
 }
 
 .press .press_wrap {
@@ -374,7 +377,8 @@ ul.breadcrumb li.ru_color a{
 .certificates .certificates_wrapper {
     margin-top: 55px;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 32px;
 }
 
 .certificates .certificates_lines {
@@ -406,8 +410,7 @@ ul.breadcrumb li.ru_color a{
 
 .ending .ending_wrapper {
     display: flex;
-    flex-wrap:nowrap;
-    grid-gap: 40px
+    gap: 62px
 }
 
 .ending .ending_wrap {
@@ -415,7 +418,7 @@ ul.breadcrumb li.ru_color a{
 }
 
 .ending .ending_item {
-    margin-top: 5px;
+    margin-top: 11px;
     list-style-type: none;
     font-family: 'Gotham Light';
     font-style: normal;
@@ -425,6 +428,14 @@ ul.breadcrumb li.ru_color a{
     
 }
 
+.ending .header_top {
+    margin-top: 24px;
+}
+
+.ending .ending_wrap .items_top {
+    margin-top: 15px;
+}
+
 .ending_link { 
     text-decoration: none;
     color: #555555;
@@ -432,4 +443,37 @@ ul.breadcrumb li.ru_color a{
 
 .ending .wrap_end {
     margin-top: 22px;
+}
+
+.ending .ending_line {
+    padding: 33px 75px 0 75px;
+}
+
+.ending .ending_developed {
+    padding: 24px 0 30px 75px;
+    font-family: 'Gotham Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #151515    
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        overflow-x: hidden;
+    }
+
+    .logo_nav {
+        padding: 10.5px 38.5px 10.5px 37.5px;
+    }
+
+    .menu .menu_item {
+        margin-right: 10.5px;
+    }
+
+    .menu .lang_item {
+        margin-right: 0;
+    }
 }
