@@ -149,7 +149,7 @@ ul.breadcrumb li.ru_color a{
     line-height: 20px;
     letter-spacing: 0.2em;
     color: #FFFFFF;
-    writing-mode: vertical-rl;
+    transform: rotate(90deg) translateX(580px) translateY(-620px);
 }
 
 
